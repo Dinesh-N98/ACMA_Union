@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>ACMA Union Content Manager</title>
+  </head>
+  <body>
+    <p id="editor-status">Loading ACMA Union’s content editor…</p>
+    <script>
+      const status = document.getElementById('editor-status');
+      const bundle = 'decap-cms@3.17.3/dist/decap-cms.js';
+      function loadEditor(source, fallback) {
+        const script = document.createElement('script');
+        script.src = source + bundle;
+        script.onload = () => status.remove();
+        script.onerror = fallback;
+        document.head.append(script);
+      }
+      loadEditor('https://cdn.jsdelivr.net/npm/', () => {
+        loadEditor('https://unpkg.com/', () => {
+          status.textContent =
+            'The content editor could not load. Check your connection and reload the page.';
+        });
+      });
+    </script>
+  </body>
+</html>

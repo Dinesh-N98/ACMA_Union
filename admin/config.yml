@@ -1,0 +1,1086 @@
+{
+  "backend": {
+    "name": "git-gateway"
+  },
+  "local_backend": true,
+  "media_folder": "public/uploads",
+  "public_folder": "/uploads",
+  "collections": [
+    {
+      "label": "The Four Pillars",
+      "name": "paths",
+      "files": [
+        {
+          "label": "Chin Woo Wushu",
+          "name": "chin-woo",
+          "file": "content/paths/chin-woo.json",
+          "format": "json",
+          "fields": [
+            {
+              "label": "Display order",
+              "name": "order",
+              "widget": "number"
+            },
+            {
+              "label": "Short label",
+              "name": "label",
+              "widget": "string"
+            },
+            {
+              "label": "Full name",
+              "name": "name",
+              "widget": "string"
+            },
+            {
+              "label": "Discipline",
+              "name": "discipline",
+              "widget": "string"
+            },
+            {
+              "label": "Overview",
+              "name": "summary",
+              "widget": "text"
+            },
+            {
+              "label": "International affiliations",
+              "name": "affiliations",
+              "widget": "list",
+              "min": 1,
+              "fields": [
+                {
+                  "label": "Organization",
+                  "name": "name",
+                  "widget": "string"
+                },
+                {
+                  "label": "City or country",
+                  "name": "place",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Official link",
+                  "name": "url",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Official logo",
+                  "name": "logo",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "label": "Affiliation note",
+                  "name": "note",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Note source link",
+                  "name": "sourceUrl",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "label": "History",
+              "name": "history",
+              "widget": "text",
+              "required": false
+            },
+            {
+              "label": "History sections",
+              "name": "historySections",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "label": "Heading",
+                  "name": "title",
+                  "widget": "string"
+                },
+                {
+                  "label": "History",
+                  "name": "body",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "label": "Sources",
+              "name": "sources",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "label": "Label",
+                  "name": "label",
+                  "widget": "string"
+                },
+                {
+                  "label": "Source link",
+                  "name": "url",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "label": "Training listing",
+              "name": "training",
+              "widget": "object",
+              "required": false,
+              "fields": [
+                {
+                  "label": "Programme",
+                  "name": "programme",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Address",
+                  "name": "address",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Phone with country code",
+                  "name": "phone",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "WhatsApp with country code",
+                  "name": "whatsapp",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Email",
+                  "name": "email",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Source link",
+                  "name": "sourceUrl",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Traditional Wing Chun",
+          "name": "wing-chun",
+          "file": "content/paths/wing-chun.json",
+          "format": "json",
+          "fields": [
+            {
+              "label": "Display order",
+              "name": "order",
+              "widget": "number"
+            },
+            {
+              "label": "Short label",
+              "name": "label",
+              "widget": "string"
+            },
+            {
+              "label": "Full name",
+              "name": "name",
+              "widget": "string"
+            },
+            {
+              "label": "Discipline",
+              "name": "discipline",
+              "widget": "string"
+            },
+            {
+              "label": "Overview",
+              "name": "summary",
+              "widget": "text"
+            },
+            {
+              "label": "International affiliations",
+              "name": "affiliations",
+              "widget": "list",
+              "min": 1,
+              "fields": [
+                {
+                  "label": "Organization",
+                  "name": "name",
+                  "widget": "string"
+                },
+                {
+                  "label": "City or country",
+                  "name": "place",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Official link",
+                  "name": "url",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Official logo",
+                  "name": "logo",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "label": "Affiliation note",
+                  "name": "note",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Note source link",
+                  "name": "sourceUrl",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "label": "History",
+              "name": "history",
+              "widget": "text",
+              "required": false
+            },
+            {
+              "label": "History sections",
+              "name": "historySections",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "label": "Heading",
+                  "name": "title",
+                  "widget": "string"
+                },
+                {
+                  "label": "History",
+                  "name": "body",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "label": "Sources",
+              "name": "sources",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "label": "Label",
+                  "name": "label",
+                  "widget": "string"
+                },
+                {
+                  "label": "Source link",
+                  "name": "url",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "label": "Training listing",
+              "name": "training",
+              "widget": "object",
+              "required": false,
+              "fields": [
+                {
+                  "label": "Programme",
+                  "name": "programme",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Address",
+                  "name": "address",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Phone with country code",
+                  "name": "phone",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "WhatsApp with country code",
+                  "name": "whatsapp",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Email",
+                  "name": "email",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Source link",
+                  "name": "sourceUrl",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "MMA Academy",
+          "name": "mma",
+          "file": "content/paths/mma.json",
+          "format": "json",
+          "fields": [
+            {
+              "label": "Display order",
+              "name": "order",
+              "widget": "number"
+            },
+            {
+              "label": "Short label",
+              "name": "label",
+              "widget": "string"
+            },
+            {
+              "label": "Full name",
+              "name": "name",
+              "widget": "string"
+            },
+            {
+              "label": "Discipline",
+              "name": "discipline",
+              "widget": "string"
+            },
+            {
+              "label": "Overview",
+              "name": "summary",
+              "widget": "text"
+            },
+            {
+              "label": "International affiliations",
+              "name": "affiliations",
+              "widget": "list",
+              "min": 1,
+              "fields": [
+                {
+                  "label": "Organization",
+                  "name": "name",
+                  "widget": "string"
+                },
+                {
+                  "label": "City or country",
+                  "name": "place",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Official link",
+                  "name": "url",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Official logo",
+                  "name": "logo",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "label": "Affiliation note",
+                  "name": "note",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Note source link",
+                  "name": "sourceUrl",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "label": "History",
+              "name": "history",
+              "widget": "text",
+              "required": false
+            },
+            {
+              "label": "History sections",
+              "name": "historySections",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "label": "Heading",
+                  "name": "title",
+                  "widget": "string"
+                },
+                {
+                  "label": "History",
+                  "name": "body",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "label": "Sources",
+              "name": "sources",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "label": "Label",
+                  "name": "label",
+                  "widget": "string"
+                },
+                {
+                  "label": "Source link",
+                  "name": "url",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "label": "Training listing",
+              "name": "training",
+              "widget": "object",
+              "required": false,
+              "fields": [
+                {
+                  "label": "Programme",
+                  "name": "programme",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Address",
+                  "name": "address",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Phone with country code",
+                  "name": "phone",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "WhatsApp with country code",
+                  "name": "whatsapp",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Email",
+                  "name": "email",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Source link",
+                  "name": "sourceUrl",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Cobra Kai",
+          "name": "cobra-kai",
+          "file": "content/paths/cobra-kai.json",
+          "format": "json",
+          "fields": [
+            {
+              "label": "Display order",
+              "name": "order",
+              "widget": "number"
+            },
+            {
+              "label": "Short label",
+              "name": "label",
+              "widget": "string"
+            },
+            {
+              "label": "Full name",
+              "name": "name",
+              "widget": "string"
+            },
+            {
+              "label": "Discipline",
+              "name": "discipline",
+              "widget": "string"
+            },
+            {
+              "label": "Overview",
+              "name": "summary",
+              "widget": "text"
+            },
+            {
+              "label": "International affiliations",
+              "name": "affiliations",
+              "widget": "list",
+              "min": 1,
+              "fields": [
+                {
+                  "label": "Organization",
+                  "name": "name",
+                  "widget": "string"
+                },
+                {
+                  "label": "City or country",
+                  "name": "place",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Official link",
+                  "name": "url",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Official logo",
+                  "name": "logo",
+                  "widget": "image",
+                  "required": false
+                },
+                {
+                  "label": "Affiliation note",
+                  "name": "note",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Note source link",
+                  "name": "sourceUrl",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            },
+            {
+              "label": "History",
+              "name": "history",
+              "widget": "text",
+              "required": false
+            },
+            {
+              "label": "History sections",
+              "name": "historySections",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "label": "Heading",
+                  "name": "title",
+                  "widget": "string"
+                },
+                {
+                  "label": "History",
+                  "name": "body",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "label": "Sources",
+              "name": "sources",
+              "widget": "list",
+              "required": false,
+              "fields": [
+                {
+                  "label": "Label",
+                  "name": "label",
+                  "widget": "string"
+                },
+                {
+                  "label": "Source link",
+                  "name": "url",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "label": "Training listing",
+              "name": "training",
+              "widget": "object",
+              "required": false,
+              "fields": [
+                {
+                  "label": "Programme",
+                  "name": "programme",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Address",
+                  "name": "address",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Phone with country code",
+                  "name": "phone",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "WhatsApp with country code",
+                  "name": "whatsapp",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Email",
+                  "name": "email",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "label": "Source link",
+                  "name": "sourceUrl",
+                  "widget": "string",
+                  "required": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Posts",
+      "name": "posts",
+      "folder": "content/posts",
+      "create": true,
+      "format": "json",
+      "extension": "json",
+      "identifier_field": "title",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "label": "Title",
+          "name": "title",
+          "widget": "string"
+        },
+        {
+          "label": "Summary",
+          "name": "summary",
+          "widget": "text"
+        },
+        {
+          "label": "Related pillars",
+          "name": "paths",
+          "widget": "select",
+          "options": [
+            {
+              "value": "chin-woo",
+              "label": "Chin Woo Wushu"
+            },
+            {
+              "value": "wing-chun",
+              "label": "Traditional Wing Chun"
+            },
+            {
+              "value": "mma",
+              "label": "MMA Academy"
+            },
+            {
+              "value": "cobra-kai",
+              "label": "Cobra Kai"
+            }
+          ],
+          "multiple": true,
+          "required": false
+        },
+        {
+          "label": "Search title",
+          "name": "seoTitle",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "label": "Search description",
+          "name": "seoDescription",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "label": "Keep off the public site",
+          "name": "draft",
+          "widget": "boolean",
+          "default": true
+        },
+        {
+          "label": "Publication date",
+          "name": "date",
+          "widget": "datetime"
+        },
+        {
+          "label": "Article image",
+          "name": "image",
+          "widget": "image",
+          "required": false
+        },
+        {
+          "label": "Image description (alt text)",
+          "name": "imageAlt",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "label": "Article body",
+          "name": "body",
+          "widget": "text"
+        }
+      ]
+    },
+    {
+      "label": "Videos",
+      "name": "videos",
+      "folder": "content/videos",
+      "create": true,
+      "format": "json",
+      "extension": "json",
+      "identifier_field": "title",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "label": "Title",
+          "name": "title",
+          "widget": "string"
+        },
+        {
+          "label": "Summary",
+          "name": "summary",
+          "widget": "text"
+        },
+        {
+          "label": "Related pillars",
+          "name": "paths",
+          "widget": "select",
+          "options": [
+            {
+              "value": "chin-woo",
+              "label": "Chin Woo Wushu"
+            },
+            {
+              "value": "wing-chun",
+              "label": "Traditional Wing Chun"
+            },
+            {
+              "value": "mma",
+              "label": "MMA Academy"
+            },
+            {
+              "value": "cobra-kai",
+              "label": "Cobra Kai"
+            }
+          ],
+          "multiple": true,
+          "required": false
+        },
+        {
+          "label": "Search title",
+          "name": "seoTitle",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "label": "Search description",
+          "name": "seoDescription",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "label": "Keep off the public site",
+          "name": "draft",
+          "widget": "boolean",
+          "default": true
+        },
+        {
+          "label": "Original video upload date",
+          "name": "date",
+          "widget": "datetime"
+        },
+        {
+          "label": "YouTube URL",
+          "name": "youtube",
+          "widget": "string",
+          "hint": "Upload on YouTube, then paste the public video URL here."
+        },
+        {
+          "label": "Custom thumbnail",
+          "name": "thumbnail",
+          "widget": "image",
+          "required": false
+        },
+        {
+          "label": "Video notes",
+          "name": "body",
+          "widget": "text",
+          "required": false
+        },
+        {
+          "label": "Transcript",
+          "name": "transcript",
+          "widget": "text",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "People",
+      "name": "people",
+      "folder": "content/people",
+      "create": true,
+      "format": "json",
+      "extension": "json",
+      "identifier_field": "name",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "label": "Name",
+          "name": "name",
+          "widget": "string"
+        },
+        {
+          "label": "Profile summary",
+          "name": "summary",
+          "widget": "text"
+        },
+        {
+          "label": "Biography",
+          "name": "bio",
+          "widget": "text"
+        },
+        {
+          "label": "Portrait",
+          "name": "portrait",
+          "widget": "image",
+          "required": false
+        },
+        {
+          "label": "Related pillars",
+          "name": "paths",
+          "widget": "select",
+          "options": [
+            {
+              "value": "chin-woo",
+              "label": "Chin Woo Wushu"
+            },
+            {
+              "value": "wing-chun",
+              "label": "Traditional Wing Chun"
+            },
+            {
+              "value": "mma",
+              "label": "MMA Academy"
+            },
+            {
+              "value": "cobra-kai",
+              "label": "Cobra Kai"
+            }
+          ],
+          "multiple": true,
+          "required": false
+        },
+        {
+          "label": "Sources",
+          "name": "sources",
+          "widget": "list",
+          "required": false,
+          "fields": [
+            {
+              "label": "Label",
+              "name": "label",
+              "widget": "string"
+            },
+            {
+              "label": "Source link",
+              "name": "url",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "label": "Keep off the public site",
+          "name": "draft",
+          "widget": "boolean",
+          "default": true
+        }
+      ]
+    },
+    {
+      "label": "Lineage relationships",
+      "name": "relationships",
+      "folder": "content/relationships",
+      "create": true,
+      "format": "json",
+      "extension": "json",
+      "identifier_field": "title",
+      "slug": "{{slug}}",
+      "fields": [
+        {
+          "label": "Record label",
+          "name": "title",
+          "widget": "string",
+          "hint": "For example: Teacher name taught student name."
+        },
+        {
+          "label": "Pillar",
+          "name": "path",
+          "widget": "select",
+          "options": [
+            {
+              "value": "chin-woo",
+              "label": "Chin Woo Wushu"
+            },
+            {
+              "value": "wing-chun",
+              "label": "Traditional Wing Chun"
+            },
+            {
+              "value": "mma",
+              "label": "MMA Academy"
+            },
+            {
+              "value": "cobra-kai",
+              "label": "Cobra Kai"
+            }
+          ],
+          "multiple": false,
+          "required": true
+        },
+        {
+          "label": "Teacher, parent or predecessor",
+          "name": "from",
+          "widget": "relation",
+          "collection": "people",
+          "search_fields": [
+            "name"
+          ],
+          "value_field": "{{slug}}",
+          "display_fields": [
+            "name"
+          ],
+          "filters": [
+            {
+              "field": "draft",
+              "values": [
+                false
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Student, child or successor",
+          "name": "to",
+          "widget": "relation",
+          "collection": "people",
+          "search_fields": [
+            "name"
+          ],
+          "value_field": "{{slug}}",
+          "display_fields": [
+            "name"
+          ],
+          "filters": [
+            {
+              "field": "draft",
+              "values": [
+                false
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Relationship",
+          "name": "type",
+          "widget": "select",
+          "options": [
+            {
+              "label": "Teacher → student",
+              "value": "teacher"
+            },
+            {
+              "label": "Parent → child",
+              "value": "parent"
+            },
+            {
+              "label": "Predecessor → successor",
+              "value": "succession"
+            }
+          ]
+        },
+        {
+          "label": "Source or attribution",
+          "name": "source",
+          "widget": "text"
+        },
+        {
+          "label": "Source link",
+          "name": "sourceUrl",
+          "widget": "string",
+          "required": false
+        },
+        {
+          "label": "Keep off the public site",
+          "name": "draft",
+          "widget": "boolean",
+          "default": true
+        }
+      ]
+    },
+    {
+      "label": "Union links",
+      "name": "settings",
+      "files": [
+        {
+          "label": "Official links",
+          "name": "socials",
+          "file": "content/settings.json",
+          "format": "json",
+          "fields": [
+            {
+              "label": "Facebook page",
+              "name": "facebook",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Instagram profile",
+              "name": "instagram",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "YouTube channel",
+              "name": "youtube",
+              "widget": "string",
+              "required": false
+            },
+            {
+              "label": "Public contact email",
+              "name": "email",
+              "widget": "string",
+              "required": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
